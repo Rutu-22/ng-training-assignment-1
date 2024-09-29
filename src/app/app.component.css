@@ -1,0 +1,45 @@
+/* Navigation Bar */
+nav {
+    background-color: #e5e8ec; /* Dark blue background */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-start; /* Align the links to the left */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-bottom: 3px solid #4CAF50; /* Green bottom border for styling */
+  }
+  
+  /* Navigation Links */
+  nav a {
+    color: rgb(13, 10, 10); /* White text */
+    text-decoration: none; /* Remove underlines */
+    font-size: 18px; /* Font size for navigation links */
+    margin-right: 20px; /* Space between the links */
+    font-weight: 500; /* Slightly bolder font */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    padding: 8px 12px; /* Padding for larger clickable area */
+    border-radius: 6px;
+  }
+  
+  /* Hover and Active States for Navigation Links */
+  nav a:hover, nav a.active {
+    background-color: #4CAF50; /* Green background on hover or active state */
+    color: white; /* White text on hover or active */
+  }
+  
+
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    nav {
+      padding: 10px 20px;
+    }
+  
+    nav a {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  
+   
+  }
+  

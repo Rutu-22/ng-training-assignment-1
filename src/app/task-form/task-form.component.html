@@ -1,0 +1,27 @@
+<form (ngSubmit)="saveTask()">
+    <label>Assigned To</label>
+    <input [(ngModel)]="task.assignedTo" name="assignedTo" required>
+  
+    <label>Status</label>
+    <select [(ngModel)]="task.status" name="status">
+      <option value="Not Started">Not Started</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Completed">Completed</option>
+    </select>
+  
+    <label>Due Date</label>
+    <input type="date" [(ngModel)]="task.dueDate" name="dueDate" required>
+  
+    <label>Priority</label>
+    <select [(ngModel)]="task.priority" name="priority">
+      <option value="Low">Low</option>
+      <option value="Normal">Normal</option>
+      <option value="High">High</option>
+    </select>
+  
+    <label>Comments</label>
+    <textarea [(ngModel)]="task.comments" name="comments"></textarea>
+  
+    <button type="submit">Save</button>
+  </form>
+  
